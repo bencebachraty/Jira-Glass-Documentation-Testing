@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Utils {
 
-    public static final String baseURL = "https://jira2.codecool.codecanvas.hu/secure/Dashboard.jspa";
+    public static final String BASE_URL = "https://jira2.codecool.codecanvas.hu/secure/Dashboard.jspa";
 
     public static void setDriverPath() {
         String driverProperty = System.getenv("DRIVER_PROPERTY");
