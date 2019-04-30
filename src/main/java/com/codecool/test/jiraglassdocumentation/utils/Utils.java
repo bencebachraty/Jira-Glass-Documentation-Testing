@@ -8,8 +8,8 @@ public class Utils {
     public static final String BASE_URL = "https://jira2.codecool.codecanvas.hu/secure/Dashboard.jspa";
 
     public static void setDriverPath() {
-        String driverProperty = System.getenv("DRIVER_PROPERTY");
         String driverPath = System.getenv("DRIVER_PATH");
+        System.setProperty("webdriver.chrome.driver", driverPath);
     }
 
     public static WebDriver createWebdriver() {
